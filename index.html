@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRITW - Sumathi Reddy Institute of Technology for Women</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-carousel .slide {
+            display: none;
+            transition: opacity 1s ease-in-out;
+        }
+        .hero-carousel .slide.active {
+            display: block;
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="logo.png" alt="SRITW Logo" class="h-16 w-auto mr-3">
+                </div>
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="#about" class="text-gray-700 hover:text-orange-600 transition">About</a>
+                    <a href="#programs" class="text-gray-700 hover:text-orange-600 transition">Programs</a>
+                    <a href="#placements" class="text-gray-700 hover:text-orange-600 transition">Placements</a>
+                    <a href="#campus-life" class="text-gray-700 hover:text-orange-600 transition">Campus Life</a>
+                    <a href="https://sritwnoc-frontend.onrender.com/" target="_blank" class="bg-blue-900 text-white px-4 py-2 rounded-md hover:bg-blue-800 transition">NOC Portal</a>
+                    <a href="#contact" class="bg-orange-600 text-white px-4 py-2 rounded-md hover:bg-orange-700 transition">Admissions</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <a href="#about" class="block py-2 px-4 text-sm text-gray-700 hover:bg-orange-50 rounded">About</a>
+                <a href="#programs" class="block py-2 px-4 text-sm text-gray-700 hover:bg-orange-50 rounded">Programs</a>
+                <a href="#placements" class="block py-2 px-4 text-sm text-gray-700 hover:bg-orange-50 rounded">Placements</a>
+                <a href="#campus-life" class="block py-2 px-4 text-sm text-gray-700 hover:bg-orange-50 rounded">Campus Life</a>
+                <a href="https://sritwnoc-frontend.onrender.com/" target="_blank" class="block py-2 px-4 text-sm bg-blue-900 text-white rounded mt-2 text-center">NOC Portal</a>
+                <a href="#contact" class="block py-2 px-4 text-sm bg-orange-600 text-white rounded mt-2 text-center">Admissions</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-[60vh] min-h-[400px] text-white overflow-hidden hero-carousel">
+            <div class="slide active">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" class="absolute inset-0 w-full h-full object-cover" alt="Campus Image 1">
+            </div>
+             <div class="slide">
+                <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" class="absolute inset-0 w-full h-full object-cover" alt="Campus Image 2">
+            </div>
+             <div class="slide">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3" class="absolute inset-0 w-full h-full object-cover" alt="Campus Image 3">
+            </div>
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="relative z-10 flex flex-col justify-center items-center h-full text-center px-4">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 fade-in">Empowering Women in Technology</h1>
+                <p class="text-lg md:text-xl max-w-3xl fade-in">The only Women's Engineering College in India with a NewGen Innovation Entrepreneurship Development Centre.</p>
+                <div class="mt-8 fade-in">
+                     <a href="#programs" class="bg-orange-600 text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-orange-700 transition">Explore Programs</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-blue-900">Welcome to SRITW</h2>
+                    <p class="text-gray-600 mt-2">A Premier Institution for Women's Engineering Education</p>
+                    <div class="w-24 h-1 bg-orange-600 mx-auto mt-4"></div>
+                </div>
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3" alt="College Building" class="rounded-lg shadow-xl w-full">
+                    </div>
+                    <div class="md:w-1/2 text-gray-700 text-lg">
+                        <p class="mb-4">Established in 2009, Sumathi Reddy Institute of Technology for Women (SRITW) is committed to providing a world-class education and fostering innovation among young women. Our mission is to empower the next generation of female leaders in science and technology.</p>
+                        <p>With state-of-the-art facilities, experienced faculty, and strong industry connections, we provide a nurturing environment where students can achieve their full potential. Our programs are NBA and NAAC accredited, ensuring the highest standards of academic excellence.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Section -->
+        <section id="programs" class="py-16">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-blue-900">Programs Offered</h2>
+                    <p class="text-gray-600 mt-2">Specialized courses to shape your future.</p>
+                    <div class="w-24 h-1 bg-orange-600 mx-auto mt-4"></div>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Program Card -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-6">
+                            <div class="text-orange-600 mb-4"><i class="fas fa-laptop-code fa-3x"></i></div>
+                            <h3 class="font-bold text-xl text-blue-900 mb-2">Computer Science & Engineering</h3>
+                            <p class="text-gray-600">Core principles of computer science and programming.</p>
+                        </div>
+                    </div>
+                    <!-- Program Card -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                         <div class="p-6">
+                            <div class="text-orange-600 mb-4"><i class="fas fa-brain fa-3x"></i></div>
+                            <h3 class="font-bold text-xl text-blue-900 mb-2">CSE (AI & ML)</h3>
+                            <p class="text-gray-600">Dive into the world of Artificial Intelligence and Machine Learning.</p>
+                        </div>
+                    </div>
+                    <!-- Program Card -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                         <div class="p-6">
+                            <div class="text-orange-600 mb-4"><i class="fas fa-database fa-3x"></i></div>
+                            <h3 class="font-bold text-xl text-blue-900 mb-2">CSE (Data Science)</h3>
+                            <p class="text-gray-600">Master the art of extracting insights from complex data.</p>
+                        </div>
+                    </div>
+                    <!-- Program Card -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                         <div class="p-6">
+                            <div class="text-orange-600 mb-4"><i class="fas fa-shield-halved fa-3x"></i></div>
+                            <h3 class="font-bold text-xl text-blue-900 mb-2">CSE (Cyber Security)</h3>
+                            <p class="text-gray-600">Learn to protect digital systems and networks from cyber threats.</p>
+                        </div>
+                    </div>
+                     <!-- Program Card -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                         <div class="p-6">
+                            <div class="text-orange-600 mb-4"><i class="fas fa-microchip fa-3x"></i></div>
+                            <h3 class="font-bold text-xl text-blue-900 mb-2">Electronics & Communication Eng.</h3>
+                            <p class="text-gray-600">Explore the fundamentals of electronics and communication systems.</p>
+                        </div>
+                    </div>
+                     <!-- Program Card -->
+                     <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-6">
+                           <div class="text-orange-600 mb-4"><i class="fas fa-bolt fa-3x"></i></div>
+                           <h3 class="font-bold text-xl text-blue-900 mb-2">Electrical & Electronics Eng.</h3>
+                           <p class="text-gray-600">Focus on electrical machinery, power systems, and electronics.</p>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Placements Section -->
+        <section id="placements" class="py-16 bg-blue-900 text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold">Excellent Placements</h2>
+                <p class="text-blue-200 mt-2 mb-8">90%+ Placement Record with Top Companies</p>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center">
+                    <!-- Accenture -->
+                    <div class="bg-white p-4 rounded-lg flex justify-center items-center h-24 transform transition hover:scale-105">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Accenture.svg" alt="Accenture Logo" class="max-h-12 w-auto">
+                    </div>
+                    <!-- Infosys -->
+                    <div class="bg-white p-4 rounded-lg flex justify-center items-center h-24 transform transition hover:scale-105">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg" alt="Infosys Logo" class="max-h-12 w-auto">
+                    </div>
+                     <!-- Wipro -->
+                    <div class="bg-white p-4 rounded-lg flex justify-center items-center h-24 transform transition hover:scale-105">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Wipro_Primary_Logo_Color_RGB.svg" alt="Wipro Logo" class="max-h-16 w-auto">
+                    </div>
+                     <!-- Oracle -->
+                    <div class="bg-white p-4 rounded-lg flex justify-center items-center h-24 transform transition hover:scale-105">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg" alt="Oracle Logo" class="max-h-12 w-auto">
+                    </div>
+                     <!-- IBM -->
+                    <div class="bg-white p-4 rounded-lg flex justify-center items-center h-24 transform transition hover:scale-105">
+                         <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM Logo" class="max-h-12 w-auto">
+                    </div>
+                     <!-- Amazon -->
+                    <div class="bg-white p-4 rounded-lg flex justify-center items-center h-24 transform transition hover:scale-105">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo" class="max-h-12 w-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Campus Life Section -->
+        <section id="campus-life" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-blue-900">Life @ SRITW Campus</h2>
+                    <p class="text-gray-600 mt-2">A vibrant and holistic student experience.</p>
+                    <div class="w-24 h-1 bg-orange-600 mx-auto mt-4"></div>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" class="rounded-lg shadow-md w-full h-64 object-cover" alt="Campus Life 1">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" class="rounded-lg shadow-md w-full h-64 object-cover" alt="Campus Life 2">
+                    <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" class="rounded-lg shadow-md w-full h-64 object-cover" alt="Campus Life 3">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" class="rounded-lg shadow-md w-full h-64 object-cover" alt="Campus Life 4">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">SRITW</h3>
+                    <p class="text-gray-400">Sumathi Reddy Institute of Technology for Women<br>Ananthasagar, Hasanparthy,<br>Warangal, Telangana 506371</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul>
+                        <li class="mb-2"><a href="#about" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li class="mb-2"><a href="#programs" class="text-gray-400 hover:text-white">Programs</a></li>
+                        <li class="mb-2"><a href="#placements" class="text-gray-400 hover:text-white">Placements</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2"></i> +91 12345 67890</p>
+                    <p class="text-gray-400 mb-4"><i class="fas fa-envelope mr-2"></i> info@sritw.org</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500">
+                <p>&copy; 2025 Sumathi Reddy Institute of Technology for Women. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Hero carousel
+        const slides = document.querySelectorAll('.hero-carousel .slide');
+        let currentSlide = 0;
+        
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) {
+                    slide.classList.add('active');
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        setInterval(nextSlide, 5000); // Change slide every 5 seconds
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>
+
+
+
+
+
